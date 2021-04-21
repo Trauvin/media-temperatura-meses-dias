@@ -19,6 +19,8 @@ public class Program {
 		System.out.print("Quantos meses serão analisados? ");
 		int n = sc.nextInt();
 		
+		System.out.println();
+		
 		int days = 0;
 		
 		for (int i=0; i<n; i++) {
@@ -34,13 +36,15 @@ public class Program {
 				
 				double temp = sc.nextDouble();
 				
-				int daysMonth = (j+1);
+				int daysMonth = (j + 1);
 				
 				list.add(new Temperature(month, temp, daysMonth));
 			}
 			
+			System.out.println();
 			
 		}
+		
 		
 		for (Temperature t : list) {
 			System.out.println(t);
@@ -53,6 +57,7 @@ public class Program {
 		
 		double avg = sum / (days * n);
 		
+		System.out.println();
 		System.out.printf("A média de temperatura dos meses foi: %.2f C", avg);
 		
 		sc.close();
