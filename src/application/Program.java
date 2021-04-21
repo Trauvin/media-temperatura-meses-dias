@@ -34,8 +34,9 @@ public class Program {
 				
 				double temp = sc.nextDouble();
 				
+				int daysMonth = (j+1);
 				
-				list.add(new Temperature(month, temp));
+				list.add(new Temperature(month, temp, daysMonth));
 			}
 			
 			
@@ -52,7 +53,7 @@ public class Program {
 		
 		double avg = sum / (days * n);
 		
-		System.out.printf("A média de temperatura dos meses foi: %.2f", avg);
+		System.out.printf("A média de temperatura dos meses foi: %.2f C", avg);
 		
 		sc.close();
 	}
